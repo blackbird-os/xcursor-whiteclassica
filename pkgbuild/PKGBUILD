@@ -1,0 +1,16 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=xcursor-whiteclassica
+pkgver=1.0
+pkgrel=1
+pkgdesc="White Classicia++ cursor theme"
+arch=('any')
+url='https://github.com/blackbird-os/xcursor-whiteclassica'
+license=('GPL')
+depends=('sddm')
+
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
